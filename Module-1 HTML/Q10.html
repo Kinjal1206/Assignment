@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Module-1 HTML/CSS/Q10.css">
+    <title>HTML Q10</title>
+</head>
+<body>
+    <div>
+        <p class="que">10. How can we club two or more rows or columns into a single row or column in an HTML table?</p>
+         <p class="ans">
+            <ul>
+                <li>We use the colspan and rowspan attribute, to merge cells in HTML. </li>
+                <li> The attribute should be placed inside the <td> <th> and <tr> tag.</li><br>
+                <li>The rowspan attribute is for the number of rows a cell should merge.
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Mobile</th>
+                                <th>Computer</th>
+                                <th>Laptop</th>
+                            </tr>
+                        <tbody>
+                            <tr>
+                                <td>Price</td>                                
+                                <td>10,000</td>
+                                <td>60,000</td>
+                                <td rowspan="2">Not avaliable</td>
+                            </tr>
+                            <tr>
+                                <td>Color</td>
+                                <td>blue</td>
+                                <td>Sliver</td>
+                            </tr>
+                        </tbody>
+                        </thead>
+                    </table>
+                </li><br>
+                <li>The colspan attribute is for the number of columns a cell should merge.
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="7">WEEK</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sunday</td>                            
+                                <td>Monday</td>
+                                <td>Tuesday</td>
+                                <td>Wednesday</td>
+                                <td>Tuesday</td>
+                                <td>Friday</td>
+                                <td>Saturday</td>
+                            </tr>
+                        </tbody>                       
+                    </table>
+                </li>
+            </ul>
+        </p>
+    </div>
+</body>
+</html>

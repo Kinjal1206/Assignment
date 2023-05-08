@@ -1,0 +1,30 @@
+div{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    background-color:lightseagreen;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.que{
+    font-size: 40px;
+}
+li{
+    list-style: square;
+    font-size: 25px;
+}
+table td{
+    font-size: 20px;
+    border: 1px solid black;
+    
+}
+.tbl-padding{
+    padding: 5px 20px;
+    
+}
+.spacing{
+    padding: 5px 20px;
+    border-spacing: 20px;
+}
