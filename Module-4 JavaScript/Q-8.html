@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Module-4 JavaScript/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Question-8</title>
+    <style>
+        #click{
+            height: 30px;
+            font-size: 15px;
+            border-radius: 5px;
+            padding: 5px;
+            font-weight: bold;
+            border: none;
+        }
+        input{
+            height: 30px;
+            border: none;
+            width: 200px;
+        }
+    </style>
+    </head>
+<body>
+    <div class="head">
+        <p>JavaScript Assignment</p>
+    </div>
+    <div class="main">
+        <h4>What is === operator?</h4>
+        <div class="ans">
+            <ul>
+                <li>=== operator is comparision operator.</li>
+                <li>This operator is cheak a given value is a same or not and also check its data type.</li>
+                <li>It is return true if data type and give value are same else return false.</li><br>
+                <li>
+                    <input id="value1" type="text" placeholder="Enter value1">
+                    <input id="value2" type="text" placeholder="Enter value2">
+                    <h4 id="value"></h4>
+                    <button id="click" onclick="aa()">Click To Check</button>                    
+                    <script>
+                        var value1=document.getElementById("value1").value;
+                        var value2=document.getElementById("value2").value;
+                        function aa(){
+                        if(value1 === value2){
+                            document.getElementById("value").innerHTML="Given value and data type both are same.";
+                        }
+                        else{
+                            document.getElementById("value").innerHTML="Given value and data type both are not same.";
+                        }
+                    };
+                    </script>
+                </li>
+            </ul>
+            <button class="left"><a href="../Module-4 JavaScript/Q-7.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></button>
+            <button class="right"><a href="../Module-4 JavaScript/Q-9.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></button>
+        </div>
+    </div>
+</body>
+</html>

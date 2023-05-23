@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Module-4 JavaScript/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Question-19</title>
+    <style>
+        input{
+            height: 30px;
+            width: 300px;
+            border-radius: 5px;
+            border: none;
+            margin: 10px;
+        }
+        button{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+    
+<body>
+    <div class="head">
+        <p>JavaScript Assignment</p>
+    </div>
+    <div class="main">
+        <h4>Create basic math operation in JS</h4>
+        <div class="ans">
+            <ul>
+                <div class="math">
+                    <input type="text" id="value1" placeholder="Enater value1"><br>
+                    <input type="text" id="value2" placeholder="Enater value2"><br>
+                    <input type="text" id="answ" placeholder="Answer is.. ">
+                    <h4 id="answer"></h4>
+                    <button id="sum" onclick="add()">+</button>
+                    <button id="sub">-</button>
+                    <button id="Mul">*</button>
+                    <button id="div">/</button>
+                    <button id="mod">%</button>
+                </div>
+                <script>
+                    var v1=document.getElementById("value1").value;
+                    var v2=document.getElementById("value2").value;
+                    var ans;
+                    function add(){
+                        ans=v1+v2;
+                        document.getElementById("answ").value=ans;
+                    }
+                </script>
+            </ul>
+            <button class="left"><a href="../Module-4 JavaScript/Q-18.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></button>
+            <button class="right"><a href="../Module-4 JavaScript/Q-20.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></button>
+        </div>
+    </div>
+</body>
+</html>

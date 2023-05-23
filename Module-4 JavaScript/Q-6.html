@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Module-4 JavaScript/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Question-6</title>
+    <style>
+        #add{
+            height: 50px;
+            font-size: 20px;
+            width: 150px;
+            border: none;
+            border-radius: 50px;
+            background-color: seagreen;
+            color: white;
+            box-shadow: 2px 2px 2px;
+            margin-left: 70px;
+        }
+        #add:active{
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <p>JavaScript Assignment</p>
+    </div>
+    <div class="main">
+        <h4>Write the code for adding new elements dynamically?</h4>
+        <div class="ans">
+            <ul>
+                <li>document.getElementById("add").addEventListener("click", function(){
+                    document.getElementById("div").innerHTML+="&lt;h5&gt;This is new element.&lt;/h5&gt;";
+                });</li>
+            </ul>
+            <li>
+            <div id="div"></div><br>
+            <button id="add">Add element.</button><br>
+            <script>
+                document.getElementById("add").addEventListener("click", function(){
+                    document.getElementById("div").innerHTML+="<h5>This is new element.</h5>";
+                });
+            </script>
+            </li>
+            <button class="left"><a href="../Module-4 JavaScript/Q-5.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></button>
+            <button class="right"><a href="../Module-4 JavaScript/Q-7.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></button>
+        </div>
+    </div>
+</body>
+</html>

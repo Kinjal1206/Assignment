@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Module-4 JavaScript/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Question-18</title>
+</head>
+    
+<body>
+    <div class="head">
+        <p>JavaScript Assignment</p>
+    </div>
+    <div class="main">
+        <h4>Create password field with show hide functionalities</h4>
+        <div class="ans">
+            <ul>
+                <li>
+                    <input type="text" id="text">
+                    <input type="checkbox" id="check">show Password
+                    <script>
+                        var text=document.getElementById("text").value;
+                        if(document.getElementById("check") == false ){
+                            document.getElementById("text").innerHTML ="*";
+                        }
+                    </script>
+                </li>
+            </ul>
+            <button class="left"><a href="../Module-4 JavaScript/Q-17.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></button>
+            <button class="right"><a href="../Module-4 JavaScript/Q-19.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></button>
+        </div>
+    </div>
+</body>
+</html>
