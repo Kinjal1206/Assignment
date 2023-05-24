@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Assignment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+            color: white;
+        }
+
+        .heading {
+            width: 450px;
+            text-align: center;
+            margin: auto;
+            font-size: 60px;
+            margin: auto;
+            text-decoration: underline;
+            text-decoration-style: dotted;
+        }
+
+        .qa {
+            width: 80%;
+            margin: auto;
+            font-size: 20px;
+        }
+
+        .aa {
+            border: 1px solid wheat;
+            padding: 5px;
+        }
+        table, td{
+            border: 1px solid  wheat;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="heading">
+            <P>CSS Assignment</p>
+        </div><br>
+        <div class="qa">
+            <div class="aa">
+                <p class="que">1) What are the benefits of using CSS? </p><br>
+                <p class="ans">You can write CSS once and then reuse the same code in multiple HTML pages. You can
+                    define a style for each HTML element and apply it to as many Web pages as you want.
+                    <br>To make a global change, simply change the style, and all elements in all the web pages will be
+                    updated automatically.
+                    <br>The Script offer consistent platform independence and can support latest browsers as well.
+                </p>
+            </div>
+            <br>
+            <div class="aa">
+                <p class="que">2) What are the disadvantages of CSS?</p><br>
+                <p class="ans">Confusion due to many CSS levels. Beginners are more vulnerable to this issue.<br>
+                    Cross-Browser Issues. Different browsers work differently.<br>
+                    Extra Work for Developers.</p>
+            </div>
+            <br>
+            <div class="aa">
+                <p class="que">3) What is the difference between CSS2 and CSS3?</p><br>
+                <p class="ans">
+                    <table>
+                        <tr>
+                            <th>CSS2</th>
+                            <th>CSS3</th>
+                        </tr>
+                        <tr>
+                            <td>In CSS2 Only web safe fonts can be used</td>
+                            <td>
+                                In CSS3 spicial fonts can be used such as google fonts
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                In CSS2 rounded border coading ere complex
+                            </td>
+                            <td>
+                                In CSS3 there is easy to do rounded corner
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                In CSS2 splitting text into multiple columns required complex coading because the standard was not equipped enough to break the text into columns so that it would fit into a box.
+                            </td>
+                            <td>
+                                CSS3 has the capability to split text into various columns  so that each text block appears as a layout of the newspaper. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                css2 dose not support the Border-box property
+                            </td>
+                            <td>
+                                css3 supports Border-box property
+                            </td>
+                        </tr>
+                    </table>
+                </p>
+            </div>
+            <br>
+            <div class="aa">
+                <p class="que">4) Name a few CSS style components:</p><br>
+                <p class="ans">CSS consists of two components:<br>
+                    Properties: These are human-readable identifiers that indicate which stylistic features you want to
+                    modify. For example, font-size , width , background-color .
+                    <br>Values: Each property is assigned a value. This value indicates how to style the
+                    property.<br><br>
+                    example:<br>
+                    "color: ble"<br>
+                    "font-size: 25px"
+                    <br><span style="color: blue; font-size: 25px;">This is blue color Text with 25px font size.</span>
+                </p>
+            </div>
+            <br>
+            <div class="aa">
+                <p class="que">5) What do you understand by CSS opacity?</p><br>
+                <p class="ans">The opacity-level of an element describes the transparency-level, where 1 is not
+                    transperant at all and 0 is completely transparent.</p><br>
+                opacity with 1
+                <div style="height: 100px; width: 100px; background-color: blue; opacity: 1;margin: 10px;"></div>
+                opacity with 0.5
+                <div style="height: 100px; width: 100px; background-color: blue; opacity: 0.5; margin: 10px;"></div>
+            </div>
+            <br>
+            <div class="aa">
+                <p class="que">6) How can the background color of an element be changed?</p><br>
+                <p class="ans">We can change background color of an element using background-color property.<br>
+                    Example:<br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, enim.</p><br>
+                text with background-color property:<br>
+                <p style="background-color: blue; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+                    enim.</p>
+                </p>
+            </div>
+            <br>
+            <div class="aa">
+                <p class="que">7) How can image repetition of the backup be controlled?</p><br>
+                <p class="ans">To control the repetition of an image in the background. You can use no-repeat value for
+                    the background-repeat property if you do not want to repeat an image, in this case, the image will
+                    display only once.<br>
+                    <br>
+                    "background-repeat: no-repeat;"
+                </p>
+            </div>
+            <br>
+            <div class="aa">
+                <p class="que">8) What is the use of the background-position property?</p><br>
+                <p class="ans">The background-position property sets the starting position of a background image.<br>
+                    By default, a background-image is placed at the top-left corner of an element.<br><br>
+                    Value for background-position property: left top, left center, left right etc..</p>
+            </div>
+            <br>
+            <div class="aa">
+                <p class="que">9) Which property controls the image scroll in the background?</p><br>
+                <p class="ans">A "background-attachment" property is used to controls the image scroll.<br>
+                    <br>
+                    "background-attachment: scroll"<br>
+                    "background-attachment: fixed"
+                </p>
+            </div><br>
+            <div class="aa">
+                <p class="que">10) Why should background and color be used as separate properties?</p><br>
+                <p class="ans">A background property is used to set background color while color property is use to set
+                    font color.</p>
+            </div><br>
+            <div class="aa">
+                <p class="que">11) How to center block elements using CSS1?</p><br>
+                <p class="ans">To center anything that's a block level element is with the margin property. When values
+                    of margin is auto and by setting auto on the left and right margin our block level element will
+                    center itself.</p>
+            </div><br>
+            <div class="aa">
+                <p class="que">12) How to maintain the CSS specifications?</p><br>
+                <p class="ans">World Wide Web Consortium maintains the css specification. The CSS specification are set of standards that defines how CSS should be used to style HTML documents.</p>
+            </div><br>
+            <div class="aa">
+                <p class="que">13) What are the ways to integrate CSS as a web page?</p><br>
+                <p class="ans">CSS can be added to HTML in three different ways.<br>
+                    1. To style a single HTML element on the page, use Inline CSS in a style attribute.<br>
+                    2. By adding CSS to the head tag of our HTML document, we can embed an internal stylesheet.<br>
+                    3. We can also connect to an external stylesheet that separates our CSS from our HTML. it is linked
+                    by using link tag in head tag. the extension of the external file is .css </p>
+            </div><br>
+            <div class="aa">
+                <p class="que">14) What is embedded style sheets?</p><br>
+                <p class="ans">Embedded Style sheet is a internal style which is declare in head tag using style tag.</p>
+            </div><br>
+            <div class="aa">
+                <p class="que">15) What are the external style sheets?</p><br>
+                <p class="ans">The external stylesheets are those files which is sepretly created for style an element.
+                    It is link using link tag in head section. This file extansion is .css. To style an HTML element in
+                    CSS file we use class, id selectors.</p>
+            </div><br>
+            <div class="aa">
+                <p class="que">16) What are the advantages and disadvantages of using external style sheets?</p><br>
+                <p class="ans">
+                    <b><u>Advantages:</u></b><br>
+                    one change to the style sheet will change all linked pages.<br>
+                    you can create classes of styles that can then be used on many different HTML elements.<br>
+                    consistent look and feel across multiple web pages.<br>
+                    <b><u>Disadvantages:</u></b><br>
+                    Your pages may not be rendered correctly until the external CSS is loaded.<br>
+                    Uploading or linking to multiple CSS files can increase your site's download time.
+                </p>
+
+            </div><br>
+            <div class="aa">
+                <p class="que">17) What is the meaning of the CSS selector?</p><br>
+                <p class="ans">CSS selectors are used to select the HTML elements. We can use class, id and element name
+                    to select elaement. </p>
+            </div><br>
+            <div class="aa">
+                <p class="que">18) What are the media types allowed by CSS?</p><br>
+                <p class="ans">The media type allowed by css are audio, video, grid etc...</p>
+            </div><br>
+            <div class="aa">
+                <p class="que">19) What is the rule set?</p><br>
+                <p class="ans">Rule set means instructions used by a controlled interface to determine what data is
+                    allowable and how the data is handled between interconnected systems.</p>
+            </div><br>
+            <div style="height: auto; padding: 5px; border: 1px solid wheat;">
+                <p class="que">20) Create layout</p>
+
+                <div style="margin-top: 20px; display: flex; justify-content: space-around;">
+                    <figure style="width:300px">
+                        <img src="../Module-2(CSS & CSS3)/Images/laptop.jpg" width="300px" alt="">
+                        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ullam.
+                            <br>
+                            <Button
+                                style="height: 20px; width: 50px; border: none; border-radius: 5px; font-weight: bold; background-color: antiquewhite; color: black;">View</Button>
+                            <button
+                                style="height: 20px; width: 50px; border: none; border-radius: 5px; font-weight: bold; background-color: antiquewhite; color: black;">Edit</button>
+                        </figcaption>
+                    </figure>
+                    <figure style="width:300px">
+                        <img src="../Module-2(CSS & CSS3)/Images/laptop.jpg" width="300px" alt="">
+                        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ullam.
+                        <br>
+                        <Button
+                            style="height: 20px; width: 50px; border: none; border-radius: 5px; font-weight: bold; background-color: antiquewhite; color: black;">View</Button>
+                        <button
+                            style="height: 20px; width: 50px; border: none; border-radius: 5px; font-weight: bold; background-color: antiquewhite; color: black;">Edit</button>
+                        </figcaption>    
+                    </figure>
+                    <figure style="width:300px">
+                        <img src="../Module-2(CSS & CSS3)/Images/laptop.jpg" width="300px" alt="">
+                        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ullam.
+                        <br>
+                        <Button
+                            style="height: 20px; width: 50px; border: none; border-radius: 5px; font-weight: bold; background-color: antiquewhite; color: black;">View</Button>
+                        <button
+                            style="height: 20px; width: 50px; border: none; border-radius: 5px; font-weight: bold; background-color: antiquewhite; color: black;">Edit</button>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div style="margin-top: 20px; display: flex; justify-content: space-around;">
+                    <figure style="width:300px">
+                        <img src="../Module-2(CSS & CSS3)/Images/laptop.jpg" width="300px" alt="">
+                        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ullam. Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Vitae, ullam.
+                            <br>
+                            <Button
+                                style="height: 20px; width: 50px; border: none; border-radius: 5px; font-weight: bold; background-color: antiquewhite; color: black;">View</Button>
+                            <button
+                                style="height: 20px; width: 50px; border: none; border-radius: 5px; font-weight: bold; background-color: antiquewhite; color: black;">Edit</button>
+                        </figcaption>
+                    </figure>
+                    <figure style="width:300px">
+                        <img src="../Module-2(CSS & CSS3)/Images/laptop.jpg" width="300px" alt="">
+                        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ullam.
+                        <br>
+                        <Button
+                            style="height: 20px; width: 50px; border: none; border-radius: 5px; font-weight: bold; background-color: antiquewhite; color: black;">View</Button>
+                        <button
+                            style="height: 20px; width: 50px; border: none; border-radius: 5px; font-weight: bold; background-color: antiquewhite; color: black;">Edit</button>
+                        </figcaption>
+                    </figure>
+                    <figure style="width:300px">
+                        <img src="../Module-2(CSS & CSS3)/Images/laptop.jpg" width="300px" alt="">
+                        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ullam. Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Vitae, ullam.
+                        <br>
+                        <Button
+                            style="height: 20px; width: 50px; border: none; border-radius: 5px; font-weight: bold; background-color: antiquewhite; color: black;">View</Button>
+                        <button
+                            style="height: 20px; width: 50px; border: none; border-radius: 5px; font-weight: bold; background-color: antiquewhite; color: black;">Edit</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
