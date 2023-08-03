@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Module-4 JavaScript/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Question-20</title>
+    <style>
+        input{
+            height: 30px;
+            width: 300px;
+            border-radius: 5px;
+            border: none;
+            margin: 10px;
+        }
+        /* input:active{
+            border: none;
+        }
+        input:focus{
+            border: none;
+        } */
+        button{
+            height: 30px;
+            width: 70px;
+            border-radius: 5%;
+            font-size: 15px;
+            font-weight: bolder;
+            border: none;
+        }
+        h3, h4{
+            display: inline;
+        }
+    </style>
+</head>
+    
+<body>
+    <div class="head">
+        <p>JavaScript Assignment</p>
+    </div>
+    <div class="main">
+        <h4>Create result</h4>
+        <div class="ans">
+            <ul>
+                <div class="result" style="border: 2px solid; padding: 20px;">
+                    <h3><label for="Clang">1. C Language</label></h3></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="value1"><br>
+                    <h3><label for="C++">2. C++ Language</label></h3>&nbsp;&nbsp;
+                    <input type="text" id="value2"><br>
+                    <h3><label for="Database">3. Database</label></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="value3"><br>
+                    <h3><label for="HTML">4. HTML</label></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="value4"><br>
+                    <h3><label for="CSS">5. CSS</label></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="value5"><br>
+                    <h3><label for="php">6. php</label></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="value6"><br>
+                    <h3><label for="Core java">7. Core java</label></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="value7"><br>               
+                    <br>                  
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button id="sum" onclick="add()">Result</button><br><br>
+                    <h4 id="answ" >Total is: </h4><br>
+                    <h4 id="pers" >Persent is: </h4>
+                    
+                </div>
+                <script>
+                    
+                 function add(){
+                    var v1=parseInt(document.getElementById("value1").value);
+                    var v2=parseInt(document.getElementById("value2").value);
+                    var v3=parseInt(document.getElementById("value3").value);
+                    var v4=parseInt(document.getElementById("value4").value);
+                    var v5=parseInt(document.getElementById("value5").value);
+                    var v6=parseInt(document.getElementById("value6").value);
+                    var v7=parseInt(document.getElementById("value7").value);
+
+                    if(v1<=18 || v2<=18 || v3<=18 || v4<=18 || v5<=18 || v6<=18 || v7<=18)
+                    {
+                        document.getElementById("answ").innerHTML+="fail";
+                        document.getElementById("pers").innerHTML+="fail";
+                    }
+                    else
+                    {
+                        var ans=v1+v2+v3+v4+v5+v6+v7;
+                        document.getElementById("answ").innerHTML+=ans+" /350";
+
+                        var per=ans/7;
+                        document.getElementById("pers").innerHTML+=per+"%";
+                    }
+
+                }
+
+                  
+                
+                </script>
+            </ul>
+            <button class="left"><a href="../Module-4 JavaScript/Q-19.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></button>
+            <button class="right"><a href="../Module-4 JavaScript/Q-21.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></button>
+        </div>
+    </div>
+</body>
+</html>

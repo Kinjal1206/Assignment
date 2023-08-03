@@ -5,7 +5,7 @@
 }
 .head{
     font-size: 50px;
-    color: lightseagreen;
+    color: seagreen;
     background-color: white;
     text-align: center;
     margin-top: 50px;
@@ -18,7 +18,7 @@ div{
     height: auto;
     margin: auto;
     width: 80%;
-    background-color:lightseagreen;
+    background-color:seagreen;
     color: white;
     border-radius: 15px;
    
@@ -53,11 +53,11 @@ li{
     float: right;
 }
 .right i, .left i{
-    color: lightseagreen;
+    color: seagreen;
     text-shadow: 2px 2px 5px;
 }
 .right:hover, .left:hover{
-    background-color: lightseagreen;    
+    background-color: seagreen;    
     text-shadow: none;
 }
 .right:hover i, .left:hover i{

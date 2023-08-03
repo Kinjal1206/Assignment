@@ -18,14 +18,23 @@
         <div class="ans">
             <ul>
                 <li>
-                    <input type="text" id="text">
-                    <input type="checkbox" id="check">show Password
+                    <input type="password" id="txt" value="KasP0c2"> 
+                    <input type="checkbox"  onclick="myfun()">show Password
+                   
                     <script>
-                        var text=document.getElementById("text").value;
-                        if(document.getElementById("check") == false ){
-                            document.getElementById("text").innerHTML ="*";
+                        
+                        function myfun(){
+                            var txt=document.getElementById("txt");
+                            if(txt.type==="password")
+                            {
+                                txt.type="text";
+                            }
+                            else{
+                                txt.type="password";
+                            }
                         }
                     </script>
+
                 </li>
             </ul>
             <button class="left"><a href="../Module-4 JavaScript/Q-17.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></button>

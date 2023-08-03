@@ -36,21 +36,49 @@
                 <div class="math">
                     <input type="text" id="value1" placeholder="Enater value1"><br>
                     <input type="text" id="value2" placeholder="Enater value2"><br>
-                    <input type="text" id="answ" placeholder="Answer is.. ">
+                    <h4 id="answ">Answer is: </h4><br>
                     <h4 id="answer"></h4>
                     <button id="sum" onclick="add()">+</button>
-                    <button id="sub">-</button>
-                    <button id="Mul">*</button>
-                    <button id="div">/</button>
-                    <button id="mod">%</button>
+                    <button id="sub" onclick="minus()">-</button>
+                    <button id="Mul" onclick="multi()">*</button>
+                    <button id="div" onclick="division()">/</button>
+                    <button id="mod" onclick="mod()">%</button>
                 </div>
                 <script>
+                    
+                 function add(){
                     var v1=parseInt(document.getElementById("value1").value);
                     var v2=parseInt(document.getElementById("value2").value);
                     var ans=v1+v2;
-                
-                    function add(){
-                        document.getElementById("answ").innerHTML=ans;
+                        document.getElementById("answ").innerHTML+=ans;
+                    }
+
+                    function minus(){
+                        var v1=parseInt(document.getElementById("value1").value);
+                        var v2=parseInt(document.getElementById("value2").value);
+                        var ans=v1-v2;
+                        document.getElementById("answ").innerHTML+=ans;
+                    }
+
+                    function multi(){
+                        var v1=parseInt(document.getElementById("value1").value);
+                        var v2=parseInt(document.getElementById("value2").value);
+                        var ans=v1*v2;
+                        document.getElementById("answ").innerHTML+=ans;
+                    }
+
+                    function division(){
+                        var v1=parseInt(document.getElementById("value1").value);
+                        var v2=parseInt(document.getElementById("value2").value);
+                        var ans=v1/v2;
+                        document.getElementById("answ").innerHTML+=ans;
+                    }
+
+                    function mod(){
+                        var v1=parseInt(document.getElementById("value1").value);
+                        var v2=parseInt(document.getElementById("value2").value);
+                        var ans=v1%v2;
+                        document.getElementById("answ").innerHTML+=ans;
                     }
                 </script>
             </ul>

@@ -17,7 +17,12 @@
         <h4>What are the disadvantages of using innerHTML in JavaScript?</h4>
         <div class="ans">
             <ul>
-                <li></li>
+                <li>
+                    <b>The use of innerHTML very slow:</b> The process of using innerHTML is much slower as its contents as slowly built, also already parsed contents and elements are also re-parsed which takes time.
+                </li>
+                <li><b>Preserves event handlers attached to any DOM elements:</b> The event handlers do not get attached to the new elements created by setting innerHTML automatically. To do so one has to keep track of the event handlers and attach it to new elements manually. This may cause a memory leak on some browsers.</li>
+                <li><b>Content is replaced everywhere:</b> Either you add, append, delete or modify contents on a webpage using innerHTML, all contents is replaced, also all the DOM nodes inside that element are reparsed and recreated.</li>
+                <li><b>Appending to innerHTML is not supported:</b> Usually, += is used for appending in JavaScript. But on appending to an Html tag using innerHTML, the whole tag is re-parsed.</li>
             </ul>
             <button class="left"><a href="../Module-4 JavaScript/Q-16.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></button>
             <button class="right"><a href="../Module-4 JavaScript/Q-18.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></button>
